@@ -1,0 +1,123 @@
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #8af6e6 0%, #a3bffa 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', 'Roboto', sans-serif;
+    }
+    .weather-container {
+      background: #f8fcfd;
+      border-radius: 25px;
+      box-shadow: 0 6px 24px rgba(44,100,144,0.07);
+      padding: 2rem;
+      max-width: 370px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .app-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #3786ea;
+      font-weight: bold;
+      font-size: 2.2rem;
+      margin-bottom: 1.6rem;
+      letter-spacing: 1px;
+    }
+    .search {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      margin-bottom: 2rem;
+    }
+    .search input {
+      border-radius: 8px;
+      border: 1px solid #d5e6f6;
+      padding: 0.7rem 1rem;
+      font-size: 1rem;
+      background: #f4fafc;
+      outline: none;
+      flex: 1;
+      transition: border 0.2s;
+    }
+    .search input:focus {
+      border: 1.5px solid #7dbfff;
+    }
+    .search button {
+      border: none;
+      background: #3786ea;
+      color: #fff;
+      border-radius: 8px;
+      width: 45px;
+      cursor: pointer;
+      font-size: 1.25rem;
+      transition: background 0.2s;
+    }
+    .search button:hover {
+      background: #2564b3;
+    }
+    .weather-icon {
+      font-size: 4.5rem;
+      color: #222e3e;
+      margin-bottom: 1.2rem;
+    }
+    .city {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #222e3e;
+      margin-bottom: 0.3rem;
+      text-align: center;
+    }
+    .temp {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #2293c7;
+      margin-bottom: 2rem;
+    }
+    .info-row {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .info-block {
+      text-align: center;
+      color: #252525;
+      font-size: 1.1rem;
+    }
+    .info-block i {
+      font-size: 2.1rem;
+      display: block;
+      margin-bottom: 0.25rem;
+      color: #171717;
+    }
+    .label {
+      display: block;
+      font-size: 1.04rem;
+      color: #6b7588;
+      font-weight: 500;
+      margin-top: 0.1rem;
+    }
+
+    @media (max-width: 480px) {
+      .weather-container {
+        max-width: 98vw;
+        padding: 1.2rem;
+      }
+      .app-title {
+        font-size: 1.2rem;
+      }
+      .search-row input {
+        font-size: 0.9rem;
+      }
+      .weather-icon {
+        font-size: 2.8rem;
+      }
+    }
+  
