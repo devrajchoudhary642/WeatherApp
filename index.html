@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <div class="app-title">
+        <i class="fas fa-cloud-sun"></i>
+        Weather App
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Enter city name" />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <i class="fas fa-cloud weather-icon"></i>
+      <div class="city">-</div>
+      <div class="temp">---</div>
+      <div class="info-row">
+        <div class="info-block">
+          <i class="fas fa-water"></i>
+          <span id="humidpercent">-%</span>
+          <span class="label">Humidity</span>
+        </div>
+        <div class="info-block">
+          <i class="fas fa-wind"></i>
+          <span class="windspeed"> - km/hr</span>
+          <span class="label">Wind Speed</span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
